@@ -1,0 +1,230 @@
+print("\033[31mMetric Conversion Calculator")
+print()
+while True:
+  measurement = input("""\033[37mWhich type of conversion do you need? 
+Please type your response or choose the corresponding number and hit ENTER:
+  
+  \033[35m1. Celsius to Farenheit
+  2. Fahrenheit to Celcius
+  3. Kilometers to miles
+  4. Miles to kilometers
+  5. KG to pounds
+  6. Pounds to KG
+  7. Meters to feet
+  8. Feet to meters
+  9. Inches to CM
+  10. CM to inches
+  11. MM to inches
+  12. Inches to MM
+  13. Inches to feet
+  14. Feet to inches
+  15. MPH to KPH
+  16. KPH to MPH
+  17. Percent to decimal
+  18. Decimal to percent
+  
+  \033[31mConversion Type >>>\033[37m  """)
+  print()
+  if measurement.lower() in ["celsius to farenheit", "1"]:
+    print()
+    answer = int(input("Enter a number:  "))
+    print("\033[33mCalculating...")
+    fahrenheit = (answer*9//5)+32
+    print()
+    print("\033[36mThe temperature in Fahrenheit is\033[31m", fahrenheit, "℉")
+    print()
+    addAnother = input("\033[31mNeed another calculation?:\033[33m  ")
+    print()
+  elif measurement.lower() in ["farenheit to celsius", 2]:
+    print()
+    answer2 = int(input("Enter a number:  "))
+    print("\033[33mCalculating...")
+    celsius = (answer2-32)*5//9
+    print()
+    print("\033[36mThe temperature in Celsius is\033[31m", celsius, "°C")
+    print()
+    addAnother = input("\033[31mNeed another calculation?:\033[33m  ")
+    print()
+  elif measurement.lower() in ["kilometers to miles", "km to m", "3"]:
+    print()
+    answer3 = float(input("Enter a number:  "))
+    print("\033[33mCalculating...\033[36m")
+    miles = answer3/1.609
+    miles = round(miles, 2)
+    print()
+    print(miles, "miles")
+    print()
+    addAnother = input("\033[31mNeed another calculation?:\033[33m  ")
+    print()
+  elif measurement.lower() in ["miles to kilometers", "m to km", "4"]:
+    print()
+    answer4 = float(input("Enter a number:  "))
+    print("\033[33mCalculating...\033[36m")
+    kilometers = answer4*1.609
+    kilometers = round(kilometers, 2)
+    print()
+    print(kilometers, "km")
+    print()
+    addAnother = input("\033[31mNeed another calculation?:\033[33m  ")
+    print()
+  elif measurement.lower() in ["kg to pounds", "kg to lbs", "5"]:
+    print()
+    answer5 = float(input(" Enter a number:  "))
+    print("\033[33mCalculating...\033[36m")
+    print()
+    pounds = answer5 * 2.205
+    pounds = round(pounds, 2)  # Corrected the variable name here
+    print(pounds, "lb(s)")
+    print()
+    addAnother = input("\033[31mNeed another calculation?:\033[33m  ")
+    print()
+  elif measurement.lower() in ["pounds to kg", "lbs to kg", "6"]:
+    print()
+    answer6 = float(input(" Enter a number:  "))
+    print("\033[33mCalculating...\033[36m")
+    print()
+    KG = answer6 / 2.205
+    KG = round(KG, 2)  # Corrected the variable name here
+    print(KG, "kg")
+    print()
+    addAnother = input("\033[31mNeed another calculation?:\033[33m  ")
+    print()
+  elif measurement.lower() in ["meters to feet", "m to ft", "7"]:
+    print()
+    answer7 = float(input(" Enter a number:  "))
+    print("\033[33mCalculating...\033[36m")
+    print()
+    FT = (answer7 * 3.281)
+    FT = round(FT, 2)  # Corrected the variable name here
+    print(FT, "ft")
+    print()
+    addAnother = input("\033[31mNeed another calculation?:\033[33m  ")
+    print()
+  elif measurement.lower() in ["feet to meters", "ft to m", "8"]:
+    print()
+    answer8 = float(input(" Enter a number:  "))
+    print("\033[33mCalculating...\033[36m")
+    print()
+    meters = (answer8/3.281)
+    meters = round(meters, 2)  # Corrected the variable name here
+    print(meters, "meters")
+    print()
+    addAnother = input("\033[31mNeed another calculation?:\033[33m  ")
+    print()
+  elif measurement.lower() in ["inches to cm", "in to cm", "inches to centimeters", "9"]:
+    print()
+    answer9 = float(input(" Enter a number:  "))
+    print("\033[33mCalculating...\033[36m")
+    print()
+    cm = (answer9*2.54)
+    cm = round(cm, 2)  # Corrected the variable name here
+    print(cm, "cm")
+    print()
+    addAnother = input("\033[31mNeed another calculation?:\033[33m  ")
+    print()
+  elif measurement.lower() in ["cm to inches", "centimeters to inches", "cm to in", "centimeters to in", "10"]:
+    print()
+    answer10 = float(input(" Enter a number:  "))
+    print("\033[33mCalculating...\033[36m")
+    print()
+    IN = (answer10/2.54)
+    IN = round(IN, 2) 
+    print(IN, "inches")
+    print()
+    addAnother = input("\033[31mNeed another calculation?:\033[33m  ")
+    print()
+  elif measurement.lower() in ["mm to inches", "mm to in", "milimeters to inches", "milimeters to in", "11"]:
+    print()
+    answer11 = float(input(" Enter a number:  "))
+    print("\033[33mCalculating...\033[36m")
+    print()
+    IN2 = (answer11/25.4)
+    IN2 = round(IN2, 2) 
+    print(IN2, "inches")
+    print()
+    addAnother = input("\033[31mNeed another calculation?:\033[33m  ")
+    print()
+  elif measurement.lower() in ["inches to milimeters", "in to mm", "inches to mm", "12"]:
+    print()
+    answer12 = float(input(" Enter a number:  "))
+    print("\033[33mCalculating...\033[36m")
+    print()
+    MM = (answer12*25.4)
+    MM = round(MM, 2) 
+    print(MM, "inches")
+    print()
+    addAnother = input("\033[31mNeed another calculation?:\033[33m  ")
+    print()
+  elif measurement.lower() in ["inches to feet", "in to ft", "inches to ft", "in to feet", "13"]:
+    print()
+    answer13 = float(input(" Enter a number:  "))
+    print("\033[33mCalculating...\033[36m")
+    print()
+    FT = (answer13/12)
+    FT = round(FT, 2) 
+    print(FT, "inches")
+    print()
+    addAnother = input("\033[31mNeed another calculation?:\033[33m  ")
+    print()
+  elif measurement.lower() in ["feet to inches", "ft to in", "ft to inches", "feet to in", "14"]:
+    print()
+    answer14 = float(input(" Enter a number:  "))
+    print("\033[33mCalculating...\033[36m")
+    print()
+    IN3 = (answer13*12)
+    IN3 = round(IN3, 2) 
+    print(IN3, "inches")
+    print()
+    addAnother = input("\033[31mNeed another calculation?:\033[33m  ")
+    print()
+  elif measurement.lower() in ["MPH to KPH", "miles per hour to kilometers per hour", "15"]:
+    print()
+    answer15 = float(input(" Enter a number:  "))
+    print("\033[33mCalculating...\033[36m")
+    print()
+    KPH = (answer15*1.609)
+    KPH = round(KPH, 2) 
+    print(KPH, "kph")
+    print()
+    addAnother = input("\033[31mNeed another calculation?:\033[33m  ")
+    print()
+  elif measurement.lower() in ["kph to mph", "kilometers per hour to miles per hour", "16"]:
+    print()
+    answer16 = float(input(" Enter a number:  "))
+    print("\033[33mCalculating...\033[36m")
+    print()
+    MPH = (answer16/1.609)
+    MPH = round(MPH, 2) 
+    print(MPH, "kph")
+    print()
+    addAnother = input("\033[31mNeed another calculation?:\033[33m  ")
+    print()
+  elif measurement.lower() in ["percent to decimal", "percentage to decimal", "% to decimal", "17"]:
+    print()
+    user_input = input(" Enter a number (with or without % sign): ")
+    user_input = user_input.rstrip('%')  # Remove "%" if it exists
+    answer17 = float(user_input)
+    print("\033[33mCalculating...\033[36m")
+    print()
+    dec = answer17 / 100
+    dec = round(dec, 2)
+    print(dec)
+    print()
+    addAnother = input("\033[31mNeed another calculation?:\033[33m  ")
+    print()
+  elif measurement.lower() in ["decimal to percent", "decimal to %", "18"]:
+    print()
+    user_input = input(" Enter a number: ")
+    answer18 = float(user_input)
+    print("\033[33mCalculating...\033[36m")
+    print()
+    per = answer18 * 100
+    per = round(per, 2)
+    print(per, "%")
+    print()
+    addAnother = input("\033[31mNeed another calculation?:\033[33m  ")
+    print()
+  if addAnother.lower() in ["no", "n"]:
+        break
+
+print("\033[36mThanks for stopping by 👋")
